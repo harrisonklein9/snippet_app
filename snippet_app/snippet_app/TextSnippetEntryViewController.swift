@@ -12,6 +12,8 @@ class TextSnippetEntryViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    var saveText: (_ text: String) -> Void = { (text:String) in }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.inputAccessoryView = createKeyboardToolbar()
@@ -38,6 +40,7 @@ class TextSnippetEntryViewController: UIViewController {
 extension TextSnippetEntryViewController : UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        saveText(textView.text)
         dismiss(animated: true, completion: nil)
     }
 }

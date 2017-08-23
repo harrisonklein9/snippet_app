@@ -52,6 +52,10 @@ class ViewController: UIViewController {
             return
         }
         textEntryVC.modalTransitionStyle = .coverVertical
+        textEntryVC.saveText = { ( text: String) in
+            let newTextSnippet = TextData(text: text)
+            self.data.append(newTextSnippet)
+        }
         present(textEntryVC, animated: true, completion: nil)
     }
 
