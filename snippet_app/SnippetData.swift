@@ -8,13 +8,17 @@
 
 import Foundation
 
+enum SnippetType: String {
+    case text = "Text"
+    case photo = "Photo"
+}
+
 class SnippetData {
-    
     let type: SnippetType
     
-    init (snippetType: SnippetType) {
+    init ( snippetType: SnippetType) {
         type = snippetType
-        print ("hi snippet created")
+        print ("\(type.rawValue) snippet created")
     }
 }
 
@@ -26,12 +30,6 @@ class TextData: SnippetData {
         super.init(snippetType: .text)
         print ("Text snippet data: \(textData)")
     }
-}
-
-
-enum SnippetType: String {
-    case text = "Text"
-    case photo = "Photo"
 }
 
 

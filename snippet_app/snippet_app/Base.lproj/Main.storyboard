@@ -34,7 +34,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.52548229329999996" blue="0.99842130829999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jgX-8U-O60" secondAttribute="trailing" id="1re-yI-tEW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jgX-8U-O60" secondAttribute="bottom" id="RLf-7g-44e"/>
@@ -44,6 +44,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Text Snippet Entry View Controller-->
+        <scene sceneID="S3L-7X-NwS">
+            <objects>
+                <viewController storyboardIdentifier="textSnippetEntry" id="CBe-xO-Eq2" customClass="TextSnippetEntryViewController" customModule="snippet_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QLy-fv-Kq5"/>
+                        <viewControllerLayoutGuide type="bottom" id="3A2-XE-GQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kL-wd-O5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-1b-ahx">
+                                <rect key="frame" x="0.0" y="28" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CBe-xO-Eq2" id="whP-cn-Mic"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.52548229329999996" blue="0.99842130829999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UGs-1b-ahx" firstAttribute="top" secondItem="QLy-fv-Kq5" secondAttribute="bottom" constant="8" id="EeE-Gn-OZk"/>
+                            <constraint firstAttribute="trailing" secondItem="UGs-1b-ahx" secondAttribute="trailing" id="dv4-Pq-mqg"/>
+                            <constraint firstItem="3A2-XE-GQy" firstAttribute="top" secondItem="UGs-1b-ahx" secondAttribute="bottom" constant="20" id="kmq-Sy-vzn"/>
+                            <constraint firstItem="UGs-1b-ahx" firstAttribute="leading" secondItem="4kL-wd-O5N" secondAttribute="leading" id="rVO-xq-saJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="UGs-1b-ahx" id="iLv-OH-Sv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sR-Pw-EU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="36"/>
         </scene>
     </scenes>
 </document>

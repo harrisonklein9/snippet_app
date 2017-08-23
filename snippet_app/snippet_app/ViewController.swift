@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Select Snippet Type", message: nil, preferredStyle: .actionSheet)
         let textAction = UIAlertAction(title: "Text", style: .default) {
             (alert: UIAlertAction!) -> Void in
-            self.data.append(SnippetData(snippetType: .text))
+            self.createNewTextSnippet()
         }
         let photoAction = UIAlertAction(title: "Photo", style: .default) {
             (alert: UIAlertAction!) -> Void in
@@ -44,7 +44,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
- 
+    
+    func createNewTextSnippet () {
+        guard let textEntryVC = storyboard?.instantiateViewController(withIdentifier: "textSnippetEntry") as? TextSnippetEntryViewController
+        else {
+            print("TextSnippetEntryViewController could not be instantiated from storyboard")
+            return
+        }
+        textEntryVC.modalTransitionStyle = .coverVertical
+        present(textEntryVC, animated: true, completion: nil)
+    }
 
 }
-
