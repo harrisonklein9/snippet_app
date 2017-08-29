@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1D5DEF1F54DBF9005D5F07 /* TextSnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5DEE1F54DBF9005D5F07 /* TextSnippetCell.swift */; };
+		2E1D5DF11F54DC16005D5F07 /* PhotoSnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5DF01F54DC16005D5F07 /* PhotoSnippetCell.swift */; };
 		2EC1470E1F493ED00070731F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1470D1F493ED00070731F /* AppDelegate.swift */; };
 		2EC147101F493ED00070731F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1470F1F493ED00070731F /* ViewController.swift */; };
 		2EC147131F493ED00070731F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC147111F493ED00070731F /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1D5DEE1F54DBF9005D5F07 /* TextSnippetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSnippetCell.swift; sourceTree = "<group>"; };
+		2E1D5DF01F54DC16005D5F07 /* PhotoSnippetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSnippetCell.swift; sourceTree = "<group>"; };
 		2EC1470A1F493ECF0070731F /* snippet_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snippet_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC1470D1F493ED00070731F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC1470F1F493ED00070731F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				2EC1470D1F493ED00070731F /* AppDelegate.swift */,
 				2EC1470F1F493ED00070731F /* ViewController.swift */,
 				2EC147111F493ED00070731F /* Main.storyboard */,
+				2E1D5DEE1F54DBF9005D5F07 /* TextSnippetCell.swift */,
+				2E1D5DF01F54DC16005D5F07 /* PhotoSnippetCell.swift */,
 				2EC147141F493ED00070731F /* Assets.xcassets */,
 				2EC147161F493ED00070731F /* LaunchScreen.storyboard */,
 				2EC147191F493ED00070731F /* Info.plist */,
@@ -143,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1D5DEF1F54DBF9005D5F07 /* TextSnippetCell.swift in Sources */,
 				2ECB256B1F4D1110004A6032 /* TextSnippetEntryViewController.swift in Sources */,
 				2EC147101F493ED00070731F /* ViewController.swift in Sources */,
 				2EC1470E1F493ED00070731F /* AppDelegate.swift in Sources */,
+				2E1D5DF11F54DC16005D5F07 /* PhotoSnippetCell.swift in Sources */,
 				2ECB25451F4A7BF0004A6032 /* SnippetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DU9PB9JUU;
 				INFOPLIST_FILE = snippet_app/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "harrisonklein.snippet-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,7 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2DU9PB9JUU;
 				INFOPLIST_FILE = snippet_app/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "harrisonklein.snippet-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";

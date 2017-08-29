@@ -12,6 +12,8 @@ class TextSnippetEntryViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    
+    
     var saveText: (_ text: String) -> Void = { (text:String) in }
 
     override func viewDidLoad() {
